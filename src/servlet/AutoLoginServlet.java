@@ -29,6 +29,7 @@ public class AutoLoginServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String username=request.getParameter("username");
 		String pwd=request.getParameter("pwd");
